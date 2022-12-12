@@ -1,4 +1,4 @@
-html,body{
+  html,body{
   /* 15:23
    width:100%;  
     height:100%;
@@ -6,53 +6,47 @@ html,body{
     margin:0;
     padding:0;*/
   }
-  
   body{
     margin: 0;
+    position:relative;
   }
-  
-  div.background{
+  .background{
     width: 100vw;
     height: 100vh;
     background-image: url("./images/night.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
   }
-  /**/
-  /*zs.background{
-    text-align: center;
-    position:relative;
-    width: 100%;
-    height: 100%;
-              
-                position: absolute;
-    
-              W    margin:0;
-      width:100%;
-      height:100%;
-      padding:0;
-         background-size: cover;
-    margin:0 auto;
-    
-      overflow: visible;
-      background-repeat: no-repeat;
-  }*/
-  .mousouchan{
-    position: relative;
-    margin-left:300px;
-    margin-top:100px;
-    width:400px;
-    height:400px;
+  .mousouchan img{
+/*    position:absolute;
+    text-align: right;*/
+    margin-left: 400px;
+    position: absolute;
+    bottom: 0px;                    /* 親要素の半分下にずらす*/
+/*   transform: translateY(20px) translateX(20px);    /* 要素自体の半分、上と左にずらす */
   }
-  .mousouchan >.eye{
-    z-index:3;
-  }
-  .moussouchan > .body_back{
-    z-index: 1;
-  }
-  .mousouchan >.head{
+  .head{
     z-index:2;
   }
+  .hair_front{
+    z-index: 3;
+  }
+  .face_back{
+    z-index: 3;
+  }
+  .eye{
+    z-index:3;
+  }
+  .face_front{
+    z-index:3;
+  }
+  .body_back{
+    z-index:1;
+  }  
+  .body_front{
+    z-index:2;
+  }
+
   
   /*.head{
     position: relative;
