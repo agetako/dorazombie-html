@@ -22,9 +22,9 @@
     </div>
     <img src="default/hukidashi.png" class ="hukidashi">
     <script src="chatbot.js"></script>
-    <button onclick="btn()" >AC</button>
-    <form name="form1">
-      <input type="text" name="input1" value="0">
+    <form name="form1" onsubmit="btn(event.form.input.value)">
+      <input type="submit" name="input1" value="0">
+      <button>AC</button>
     </form>
   </div>
   <!---->  
