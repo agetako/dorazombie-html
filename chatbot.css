@@ -25,6 +25,8 @@
     bottom: 0px;                    /* 親要素の半分下にずらす*/
 /*   transform: translateY(20px) translateX(20px);    /* 要素自体の半分、上と左にずらす */
   }
+  .hukidashi{
+  }
   .head{
     z-index:2;
   }
@@ -46,7 +48,11 @@
   .body_front{
     z-index:2;
   }
-
+  .hukidashi{
+    width:200px;
+    height:200px;
+    margin-left:600px;
+  }
   
   /*.head{
     position: relative;
