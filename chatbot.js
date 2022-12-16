@@ -51,11 +51,12 @@ function Analysis(sentText){
     var tmp = sentText.split("\n"); // 改行を区切り文字として行を要素とした配列を生成
     let regex=new RegExp(sentText);
     // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
-    for(var i=0;i<tmp.length;++i){
+    for(var i=0;i<tmp.
+        length;++i){
 //        result[i] = tmp[i].split('\n');
       //  console.log(result[i]);
 //      let re=new RegExp(tmp[i],sentText)
-      console.log(regex.test(tmp[i]));
+      console.log(/エッチ/.test(tmp[i]));
     }
 
 }
