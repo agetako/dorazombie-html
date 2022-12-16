@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!--15:23-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="chatbot.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chatbot.css" />
     <title>妄想ちゃん</title>
-</head>
-<body>
-  <div class="background">
-    <div class="mousouchan">
-      <img src="default/eye/だる目(黒め)1.png" class="eye">
-      <img src="default/face_back/三角口(困り).png" class="face_back">
-      <img src="default/accessory_front/アホ毛太め(髪).png" class="accessory_front">
-      <img src="default/face_front/三角口(困り).png" class="face_front">
-      <img src="default/hair_front/お嬢様.png" class="hair_front">
-      <img src="default/head/普通な顔1.png" class="head">
-      <img src="default/body_front/ゴスロリ(ミニ)1.png" class="body_front">
-      <img src="default/body_back/ゴスロリ(ミニ)1.png" class="body_back">            
+  </head>
+  <body>
+    <div class="background">
+      <div class="mousouchan">
+        <img src="default/eye/だる目(黒め)1.png" class="eye" />
+        <img src="default/face_back/三角口(困り).png" class="face_back" />
+        <img
+          src="default/accessory_front/アホ毛太め(髪).png"
+          class="accessory_front"
+        />
+        <img src="default/face_front/三角口(困り).png" class="face_front" />
+        <img src="default/hair_front/お嬢様.png" class="hair_front" />
+        <img src="default/head/普通な顔1.png" class="head" />
+        <img src="default/body_front/ゴスロリ(ミニ)1.png" class="body_front" />
+        <img src="default/body_back/ゴスロリ(ミニ)1.png" class="body_back" />
+      </div>
+      <div class="response">
+          <img src="default/hukidashi.png" class="hukidashi">
+          <ul class="mousouchanTalk">
+            <form name="mousouchanResponse">
+              <li id="msg"></li>
+            <li></li><!--16-->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            </ul>
+          </form>
+        </div>
+  
+      <script src="chatbot.js"></script>
+         <!-- <form name="form1" onsubmit="onSubmit(event)"-->
+        <form name="form1" onsubmit="OnSubmit(); return false;" class="form1">
+          <input name="input_text" type="text" class="input_text">
+          <input type="submit" value="送信する">
+          <!--<button>送信</button>-->
+        </form>
     </div>
-    <img src="default/hukidashi.png" class ="hukidashi">
-    <script src="chatbot.js"></script>
-    <form name="form1" onsubmit="btn(event.form.input.value)">
-      <input type="submit" name="input1" value="0">
-      <button>AC</button>
-    </form>
-  </div>
-  <!---->  
-</body>
+    <!---->
+  </body>
 </html>
