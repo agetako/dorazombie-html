@@ -64,4 +64,5 @@ function Response(sentText){
     if(sentText=="こんにちは"){
         msg.innerText=sentText;
     }
+    /*Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received*/
 }
