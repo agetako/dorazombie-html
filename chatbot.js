@@ -23,6 +23,7 @@ function RequestCsv(dataFiles){
     req.open("get", dataFiles,false); // アクセスするファイルを指定        
     req.send(null); // HTTPリクエストの発行
     req.onload = function(){
+        console.log(req.responseText);
         return req.responseText;    
         //console.log("b");
         //return 'a';
